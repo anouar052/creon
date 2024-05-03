@@ -15,13 +15,13 @@ const navItems = [
 const Header: FC = () => {
 	const [navOpen, setNavOpen] = useState(false);
 	return (
-		<header className="flex h-[6.5rem] items-center justify-between p-8 font-satoshi">
+		<header className="absolute left-0 top-0 z-30 flex h-[6.5rem] w-full items-center justify-between p-4 font-satoshi md:p-8">
 			<Logo className="scale-90" />
-			<nav className="flex items-center md:gap-4 lg:gap-12 xl:gap-14">
+			<nav className="flex items-center md:gap-4 lg:gap-10">
 				<div
 					className={` ${
 						navOpen ? "translate-x-0" : "translate-x-full"
-					} min-w-1/2 fixed right-0 top-0 flex h-screen w-2/3 flex-col bg-black pl-8 pt-8 transition-all duration-500 ease-out md:w-1/3 lg:static lg:h-auto   lg:w-full lg:translate-x-0  lg:flex-row lg:items-center lg:gap-12  lg:bg-transparent lg:pt-0 xl:gap-14`}
+					} min-w-1/2 fixed right-0 top-0 flex h-screen w-2/3 flex-col bg-black pl-8 pt-8 transition-all duration-500 ease-out md:w-1/3 lg:static lg:h-auto   lg:w-full lg:translate-x-0  lg:flex-row lg:items-center lg:gap-10  lg:bg-transparent lg:pt-0  `}
 				>
 					<CustomButton
 						type="button"
