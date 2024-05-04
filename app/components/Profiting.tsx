@@ -1,4 +1,4 @@
-import Image from "next/image";
+import GradientOverlay from "./GradientOverlay";
 
 const Profiting = () => {
 	return (
@@ -9,12 +9,11 @@ const Profiting = () => {
 			</h3>
 			<div className="mt-8 flex h-fit ">
 				<div className="relative mr-8 w-full flex-[2.5] ">
-					<div className="absolute inset-0 z-[2] bg-gradient-to-r from-brand-purple to-brand-blue mix-blend-soft-light" />
-					<Image
-						className="h-full w-full object-cover object-center"
-						src="/profitImg.jpg"
-						alt="Profiting Image"
-						fill
+					<GradientOverlay />
+					<video
+						controls
+						src="/videos/creon-logo.mp4"
+						className="absolute -z-[1] h-full w-full object-cover"
 					/>
 				</div>
 				<div className=" flex-1 space-y-4 border-x border-x-white border-opacity-10 px-6 py-[5.5rem] leading-[1.3]">

@@ -1,13 +1,21 @@
-import Image from "next/image";
 const Hero = () => {
 	return (
 		<section className="relative flex h-screen flex-col gap-8 px-4 py-20 md:px-8 lg:px-24 xl:px-48">
-			<Image
-				src="/heroImg.jpg"
-				className="z-0 h-full w-full object-cover object-center"
-				alt="heroImg"
-				fill
-			/>
+			<div className="absolute inset-0 -z-10 h-full w-full object-cover  ">
+				<video
+					muted
+					autoPlay
+					loop
+					src="/videos/main-background-video.mp4"
+					className="absolute h-full w-full object-cover"
+				/>
+			</div>
+			{/* <Image */}
+			{/* 	src="/heroImg.jpg" */}
+			{/* 	className="z-0 h-full w-full object-cover object-center" */}
+			{/* 	alt="heroImg" */}
+			{/* 	fill */}
+			{/* /> */}
 			<div className="via-47% to-99% absolute inset-0 z-[1] bg-gradient-to-t from-black via-brand-blue to-brand-purple mix-blend-soft-light  " />
 			<h1 className="z-10 mt-auto font-title text-3xl uppercase leading-[1.1] md:text-4xl lg:text-5xl xl:text-6xl">
 				The world's first platform for Tokenizing AI blockchain projects

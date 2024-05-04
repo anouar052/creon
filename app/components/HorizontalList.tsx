@@ -1,3 +1,4 @@
+import GradientOverlay from "./GradientOverlay";
 import HorizontalCard from "./HorizontalCard";
 
 const cardsContent = [
@@ -23,8 +24,22 @@ const cardsContent = [
 
 const HorizontalList = () => {
 	return (
-		<section className=" min-h-screen w-full px-4 py-20 md:px-8 lg:px-24 xl:px-44  ">
-			<ul className="flex flex-col gap-6">
+		<section className="relative min-h-screen w-full px-4 pb-36 pt-20 md:px-8 lg:px-24 xl:px-44  ">
+			<div
+				className="absolute inset-0 -z-[1] h-full w-full bg-gradient-to-b from-black to-transparent"
+				aria-hidden
+			/>
+			<div className="absolute inset-0 -z-10 h-full w-full object-cover opacity-20">
+				<GradientOverlay />
+				<video
+					muted
+					autoPlay
+					loop
+					src="/videos/roadmap-video.mp4"
+					className="h-full w-full object-cover"
+				/>
+			</div>
+			<ul className="z-[2] flex flex-col gap-6">
 				{cardsContent &&
 					cardsContent.map((card, index) => (
 						<HorizontalCard key={index} card={card} />

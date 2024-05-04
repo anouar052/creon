@@ -1,4 +1,3 @@
-import Image from "next/image";
 import CustomButton from "./CustomButton";
 
 const itemsList = [
@@ -36,15 +35,16 @@ const CreonPass = () => {
 				/>
 			</div>
 			<div
-				style={{ boxShadow: "inset -10px -10px 20px 60px #000" }}
+				style={{ boxShadow: "inset -10px -10px 20px 40px black " }}
 				className="relative h-full w-full  shadow-inner  shadow-red-800 "
 			>
-				<div className="absolute inset-0 bg-gradient-to-r from-[rgba(61,139,255,0.44)] to-brand-purple mix-blend-soft-light " />
-				<Image
-					src="/CreonPassImg.jpg"
-					className=" z-[-1] h-full w-full object-cover"
-					alt="creon pass"
-					fill
+				<div className="absolute inset-0 bg-gradient-to-t from-[rgba(61,139,255,0.44)] to-brand-purple mix-blend-soft-light " />
+				<video
+					muted
+					autoPlay
+					loop
+					src="/videos/nft-video.mp4"
+					className="absolute -z-[1] h-full w-full object-cover"
 				/>
 			</div>
 		</section>

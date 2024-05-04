@@ -45,7 +45,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`font-satoshi ${satoshi.variable} ${titleFont.variable}`}
+				className={`relative font-satoshi ${satoshi.variable} ${titleFont.variable}`}
 			>
 				<Header />
 				{children}
