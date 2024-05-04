@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 
 const satoshi = localFont({
 	src: [
@@ -48,6 +49,7 @@ export default function RootLayout({
 			>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

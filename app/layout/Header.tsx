@@ -32,7 +32,7 @@ const Header: FC = () => {
 					{navItems.map((item, index) => (
 						<CustomNavLink item={item} key={index} />
 					))}
-					<Socials />
+					<Socials className="lg:hidden" />
 				</div>
 			</nav>
 			<button

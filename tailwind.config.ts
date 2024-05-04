@@ -21,7 +21,9 @@ const config: Config = {
 			colors: {
 				brand: {
 					blue: "#3D8BFF",
+					blueDark: "#3D6FFF",
 					purple: "#AB23FF",
+					purpleDark: "#9123FF",
 					gray: "#13171D",
 				},
 			},

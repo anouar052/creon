@@ -1,9 +1,10 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-const Socials = () => {
+const Socials = ({ className }: { className?: string }) => {
 	return (
-		<ul className="mb-8 mt-auto flex items-center gap-4 lg:hidden">
-			<li>
+		<ul className={cn(`mb-8 mt-auto flex items-center gap-4 `, className)}>
+			<li className="rounded-full transition-colors hover:bg-brand-blue">
 				<Link href="#">
 					<svg
 						width="34"
@@ -20,7 +21,7 @@ const Socials = () => {
 					</svg>
 				</Link>
 			</li>
-			<li>
+			<li className="rounded-full transition-colors hover:bg-brand-blue">
 				<Link href="#">
 					<svg
 						width="34"
@@ -44,7 +45,7 @@ const Socials = () => {
 					</svg>{" "}
 				</Link>
 			</li>
-			<li>
+			<li className="rounded-full transition-colors hover:bg-brand-blue">
 				<Link href="#">
 					<svg
 						width="34"
