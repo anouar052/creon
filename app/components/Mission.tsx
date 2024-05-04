@@ -1,20 +1,22 @@
 import Image from "next/image";
-import Container from "./Container";
+import Container from "../layout/Container";
+import CustomAccordion from "./CustomAccordion";
 
 const Mission = () => {
 	return (
-		<Container className="flex h-screen w-full gap-6 py-20 ">
-			<div className="flex flex-[1.2] flex-col  ">
+		<Container className="flex h-[110vh] w-full gap-6 py-20 ">
+			<div className="flex w-fit flex-[1.2] flex-col  ">
 				<h3 className="font-title text-[2.1rem] uppercase  leading-[1.1] tracking-wide">
 					<span>
 						Our vision is to support the innovation of AI blockchain projects{" "}
 					</span>
 					<span className="bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
+						{" "}
 						while prioritizing communities and democratizing profits
 					</span>
 				</h3>
 				<div
-					className="relative -mr-[20%] ml-[20%] flex-1"
+					className="relative -mr-[20%] ml-[20%]  w-[120%] flex-1"
 					style={{ boxShadow: "inset 0px 0px 20px 40px black " }}
 				>
 					<Image
@@ -25,7 +27,9 @@ const Mission = () => {
 					/>
 				</div>
 			</div>
-			<div className=" flex-1"></div>
+			<div className=" z-10 ml-[10vw] flex-1 -translate-y-6 ">
+				<CustomAccordion />
+			</div>
 		</Container>
 	);
 };
