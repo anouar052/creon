@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Container from "./Container";
 
 const cardsContent = [
 	{
@@ -29,13 +30,13 @@ const cardsContent = [
 
 const ComingSoon = () => {
 	return (
-		<section className=" flex h-screen w-full flex-col gap-6 px-4 py-20 md:px-8 lg:px-24 xl:px-44  ">
+		<Container className=" flex   flex-col gap-6  py-20     ">
 			<ul className="grid h-[90%] w-full grid-cols-2 flex-wrap justify-between gap-8 [grid-auto-rows:8rem,10rem,10rem] md:grid-cols-4 lg:grid-cols-6">
 				{cardsContent.map((card, index) => (
 					<Card card={card} key={index} />
 				))}
 			</ul>
-		</section>
+		</Container>
 	);
 };
 

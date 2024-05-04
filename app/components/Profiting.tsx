@@ -1,8 +1,9 @@
+import Container from "./Container";
 import GradientOverlay from "./GradientOverlay";
 
 const Profiting = () => {
 	return (
-		<section className=" flex h-screen w-full flex-col gap-6 px-4 py-20 md:px-8 lg:px-24 xl:px-44  ">
+		<Container className=" flex h-screen w-full flex-col gap-6 py-20  ">
 			<h2 className="font-title text-6xl uppercase">Profiting Through</h2>
 			<h3 className="w-fit self-end bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text font-title text-3xl uppercase text-transparent">
 				AI Innovation & Decentralization
@@ -30,7 +31,7 @@ const Profiting = () => {
 					</p>
 				</div>
 			</div>
-		</section>
+		</Container>
 	);
 };
 

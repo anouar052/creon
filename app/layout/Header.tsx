@@ -52,7 +52,7 @@ const Header: FC = () => {
 						<path
 							d="M1 1L7 7M13 13L7 7M7 7L13 1L1 13"
 							stroke="white"
-							stroke-width="2"
+							strokeWidth="2"
 						/>
 					</svg>
 				) : (
@@ -66,12 +66,12 @@ const Header: FC = () => {
 						<path
 							d="M39 1.0542L0.433594 1.0542"
 							stroke="white"
-							stroke-width="2"
+							strokeWidth="2"
 						/>
 						<path
 							d="M39 7.32031L18.1348 7.32031"
 							stroke="white"
-							stroke-width="2"
+							strokeWidth="2"
 						/>
 					</svg>
 				)}

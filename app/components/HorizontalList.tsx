@@ -1,3 +1,4 @@
+import Container from "./Container";
 import GradientOverlay from "./GradientOverlay";
 import HorizontalCard from "./HorizontalCard";
 
@@ -24,7 +25,7 @@ const cardsContent = [
 
 const HorizontalList = () => {
 	return (
-		<section className="relative min-h-screen w-full px-4 pb-36 pt-20 md:px-8 lg:px-24 xl:px-44  ">
+		<Container className="relative h-auto min-h-screen w-full pb-36 pt-20 ">
 			<div
 				className="absolute inset-0 -z-[1] h-full w-full bg-gradient-to-b from-black to-transparent"
 				aria-hidden
@@ -45,7 +46,7 @@ const HorizontalList = () => {
 						<HorizontalCard key={index} card={card} />
 					))}
 			</ul>
-		</section>
+		</Container>
 	);
 };
 

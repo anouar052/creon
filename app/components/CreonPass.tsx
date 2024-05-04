@@ -1,3 +1,4 @@
+import Container from "./Container";
 import CustomButton from "./CustomButton";
 
 const itemsList = [
@@ -9,7 +10,7 @@ const itemsList = [
 
 const CreonPass = () => {
 	return (
-		<section className="flex h-screen w-full gap-12 px-4 py-20 md:px-8 lg:px-24 xl:px-44">
+		<Container className="flex  gap-12 py-20">
 			<div className="w-full">
 				<h2 className="border-b border-b-white border-opacity-10 py-6 font-title text-6xl uppercase">
 					creon pass nft
@@ -47,7 +48,7 @@ const CreonPass = () => {
 					className="absolute -z-[1] h-full w-full object-cover"
 				/>
 			</div>
-		</section>
+		</Container>
 	);
 };
 

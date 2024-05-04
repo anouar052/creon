@@ -1,6 +1,8 @@
+import Container from "./Container";
+
 const Hero = () => {
 	return (
-		<section className="relative flex h-screen flex-col gap-8 px-4 py-20 md:px-8 lg:px-24 xl:px-48">
+		<Container className="relative flex h-screen flex-col gap-8  py-20 ">
 			<div className="absolute inset-0 -z-10 h-full w-full object-cover  ">
 				<video
 					muted
@@ -23,7 +25,7 @@ const Hero = () => {
 			<h2 className="relative z-10 w-fit border-y border-y-transparent bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-lg font-semibold text-transparent before:absolute before:-top-1 before:left-0 before:h-[1] before:w-full before:bg-white before:bg-gradient-to-r before:from-brand-blue before:to-brand-purple after:absolute after:-bottom-1 after:left-0 after:h-[1] after:w-full after:bg-white after:bg-gradient-to-r after:from-brand-blue after:to-brand-purple ">
 				Hold the Creon Pass NFT and earn passive income from AI Tools
 			</h2>
-		</section>
+		</Container>
 	);
 };
 
