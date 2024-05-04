@@ -25,8 +25,9 @@ const Header: FC = () => {
 				>
 					<CustomButton
 						type="button"
-						className="mb-4 w-fit lg:order-last "
+						className="mb-4 w-fit lg:order-last lg:mb-0 "
 						text="Connect"
+						variant="secondary"
 					/>
 					{navItems.map((item, index) => (
 						<CustomNavLink item={item} key={index} />

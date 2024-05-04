@@ -17,8 +17,19 @@
 /* } */
 
 body {
-  background-color: #250e3c;
+  background-color: black;
   color: white;
+}
+
+.primary-button {
+  background: linear-gradient(to right, #3D8BFF, #3D8BFF, #AB23FF);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position .5s;
+}
+
+.primary-button:hover {
+  background-position: 0 0;
 }
 
 @layer utilities {
