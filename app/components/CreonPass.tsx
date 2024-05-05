@@ -47,6 +47,7 @@ const CreonPass = () => {
 				<video
 					muted
 					autoPlay
+					playsInline
 					loop
 					src="/videos/nft-video.mp4"
 					className="absolute -z-[2] h-full w-full object-cover"

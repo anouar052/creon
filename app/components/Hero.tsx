@@ -5,6 +5,7 @@ const Hero = () => {
 		<Container className="relative flex h-screen flex-col gap-8  py-20 ">
 			<div className="absolute inset-0 -z-10 h-full w-full object-cover  ">
 				<video
+					playsInline
 					muted
 					autoPlay
 					loop

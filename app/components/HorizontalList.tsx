@@ -35,6 +35,7 @@ const HorizontalList = () => {
 				<video
 					muted
 					autoPlay
+					playsInline
 					loop
 					src="/videos/roadmap-video.mp4"
 					className="h-full w-full object-cover"
