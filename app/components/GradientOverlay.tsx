@@ -9,7 +9,7 @@ const GradientOverlay = ({ blendMode = "softlight", className }: Props) => {
 		<div
 			aria-hidden
 			className={cn(
-				"absolute inset-0 z-[2] bg-gradient-to-t from-brand-blueDark to-brand-purpleDark  ",
+				"pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-brand-blueDark to-brand-purpleDark  ",
 				className,
 				{
 					"mix-blend-overlay": blendMode === "overlay",

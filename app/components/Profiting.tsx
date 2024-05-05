@@ -11,12 +11,12 @@ const Profiting = () => {
 				AI Innovation & Decentralization
 			</h3>
 			<div className="mt-8 flex h-fit flex-col md:flex-row ">
-				<div className="relative mr-8 h-full min-h-[20rem] w-full flex-[2.5] ">
+				<div className="relative mr-8 h-full min-h-[15rem] w-full flex-[2.5]  md:min-h-[25rem] ">
 					<GradientOverlay />
 					<video
 						controls
 						src="/videos/creon-logo.mp4"
-						className="absolute -z-[1] h-full w-full object-cover"
+						className="absolute h-full  w-full cursor-pointer object-cover"
 					/>
 				</div>
 				<div className=" flex-1 space-y-4 border-x border-x-white border-opacity-10 px-6 py-6 leading-[1.3] md:py-[5.5rem]">

@@ -6,7 +6,7 @@ import CustomNavLink from "../components/CustomNavLink";
 import Socials from "../components/Socials";
 
 const navItems = [
-	{ title: "Creon Pass", badge: false, link: "#" },
+	{ title: "Creon Pass", badge: false, link: "#creonPass" },
 	{ title: "Token", badge: true, link: "#" },
 	{ title: "AI Revenue", badge: true, link: "#" },
 	{ title: "AI Launchpad", badge: true, link: "#" },
@@ -15,9 +15,16 @@ const navItems = [
 const Header: FC = () => {
 	const [navOpen, setNavOpen] = useState(false);
 	return (
-		<header className="absolute left-0 top-0 z-30 flex h-[6.5rem] w-full items-center justify-between p-4 font-satoshi md:p-8">
+		<header
+			className={`fixed left-0 top-0 z-30 flex h-[6.5rem] w-full items-center justify-between p-4 font-satoshi md:p-8 lg:absolute`}
+		>
+			<div
+				className={`fixed inset-0 z-10  filter ${
+					navOpen ? "backdrop-blur-md" : ""
+				} pointer-events-none transition-all md:hidden`}
+			/>
 			<Logo className="origin-left scale-75" />
-			<nav className="flex items-center md:gap-4 lg:gap-10">
+			<nav className="z-20 flex items-center md:gap-4 lg:gap-10">
 				<div
 					className={` ${
 						navOpen ? "translate-x-0" : "translate-x-full"

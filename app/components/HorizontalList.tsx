@@ -25,7 +25,7 @@ const cardsContent = [
 
 const HorizontalList = () => {
 	return (
-		<Container className="relative h-auto min-h-screen w-full pb-36 pt-20 ">
+		<Container className="relative h-auto min-h-screen w-full pb-36 md:pt-20 ">
 			<div
 				className="absolute inset-0 -z-[1] h-full w-full bg-gradient-to-b from-black to-transparent"
 				aria-hidden

@@ -10,7 +10,10 @@ const itemsList = [
 
 const CreonPass = () => {
 	return (
-		<Container className="relative h-fit  justify-start gap-12 py-20 md:flex md:min-h-screen  ">
+		<Container
+			id="creonPass"
+			className="relative h-fit  justify-start gap-12 md:flex md:min-h-screen md:py-20  "
+		>
 			<div className="relative z-[2] w-full">
 				<h2 className="border-b border-b-white border-opacity-10 py-6 font-title text-4xl uppercase lg:text-[3.5vw] lg:leading-none">
 					creon pass nft
