@@ -10,7 +10,7 @@ const itemsList = [
 
 const CreonPass = () => {
 	return (
-		<Container className="relative justify-start  gap-12 py-20 md:flex md:h-screen  ">
+		<Container className="relative h-fit  justify-start gap-12 py-20 md:flex md:min-h-screen  ">
 			<div className="relative z-[2] w-full">
 				<h2 className="border-b border-b-white border-opacity-10 py-6 font-title text-4xl uppercase lg:text-[3.5vw] lg:leading-none">
 					creon pass nft
@@ -35,7 +35,7 @@ const CreonPass = () => {
 					className="mt-14 w-3/4"
 				/>
 			</div>
-			<div className="absolute inset-0 -z-[1] h-full w-full shadow-inner shadow-red-800 brightness-[20%] md:relative  md:inset-auto  md:z-0 md:brightness-100 ">
+			<div className="absolute inset-0 -z-[1] min-h-[80vh] w-full shadow-inner shadow-red-800 brightness-[20%] md:relative md:z-0   md:flex md:brightness-100 ">
 				<div className="absolute inset-0 bg-gradient-to-t from-[rgba(61,139,255,0.44)] to-brand-purple mix-blend-soft-light " />
 				<div
 					className="absolute inset-0 h-full w-full "

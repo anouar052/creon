@@ -3,8 +3,8 @@ import GradientOverlay from "./GradientOverlay";
 
 const Profiting = () => {
 	return (
-		<Container className=" flex  w-full flex-col gap-6 py-20 md:h-screen  ">
-			<h2 className="font-title text-4xl uppercase md:text-6xl">
+		<Container className=" flex  w-full flex-col gap-6 py-20 md:min-h-screen  ">
+			<h2 className="font-title text-4xl uppercase md:text-[3.5vw] md:leading-none">
 				Profiting Through
 			</h2>
 			<h3 className="w-fit self-end bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text font-title text-2xl uppercase text-transparent md:text-3xl">

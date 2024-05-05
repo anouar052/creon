@@ -4,7 +4,7 @@ import CustomAccordion from "./CustomAccordion";
 
 const Mission = () => {
 	return (
-		<Container className="flex h-auto min-h-[110vh] w-full flex-col gap-8 py-20 md:mt-36  md:flex-row md:gap-4 lg:my-0 ">
+		<Container className="flex h-auto min-h-[110vh] w-full flex-col gap-8 py-20  md:flex-row md:gap-4 lg:my-0 ">
 			<div className="flex w-fit flex-[1.2] flex-col  ">
 				<h3 className="font-title  text-2xl uppercase leading-[1.3] tracking-wide lg:text-3xl ">
 					<span>
