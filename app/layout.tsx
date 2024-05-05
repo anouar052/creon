@@ -47,6 +47,7 @@ export default function RootLayout({
 			<body
 				className={`relative font-satoshi ${satoshi.variable} ${titleFont.variable}`}
 			>
+				<link rel="icon" href="/favicon.svg" sizes="any" />
 				<Header />
 				{children}
 				<Footer />
