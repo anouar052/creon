@@ -28,7 +28,7 @@ const Header: FC = () => {
 				<div
 					className={` ${
 						navOpen ? "translate-x-0" : "translate-x-full"
-					} min-w-1/2 fixed right-0 top-0 flex h-screen w-2/3 flex-col bg-black pl-8 pt-8 transition-all duration-500 ease-out md:w-1/3 lg:static lg:h-auto   lg:w-full lg:translate-x-0  lg:flex-row lg:items-center lg:gap-10  lg:bg-transparent lg:pt-0  `}
+					} min-w-1/2 fixed right-0 top-0 flex h-[100dvh] w-2/3 flex-col bg-black pl-8 pt-8 transition-all duration-500 ease-out md:w-1/3 lg:static lg:h-auto   lg:w-full lg:translate-x-0  lg:flex-row lg:items-center lg:gap-10  lg:bg-transparent lg:pt-0  `}
 				>
 					<CustomButton
 						type="button"
