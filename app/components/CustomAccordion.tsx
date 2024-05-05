@@ -112,7 +112,7 @@ const accordionData = [
 
 const CustomAccordion = () => {
 	return (
-		<Accordion type="single" collapsible>
+		<Accordion className="min-h-2" type="single" collapsible>
 			{accordionData &&
 				accordionData.map((item, i) => (
 					<AccordionComponent item={item} key={i} index={i} />

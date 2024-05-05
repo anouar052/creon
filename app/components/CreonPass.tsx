@@ -10,12 +10,12 @@ const itemsList = [
 
 const CreonPass = () => {
 	return (
-		<Container className="flex  gap-12 py-20">
-			<div className="w-full">
-				<h2 className="border-b border-b-white border-opacity-10 py-6 font-title text-6xl uppercase">
+		<Container className="relative justify-start  gap-12 py-20 md:flex md:h-screen  ">
+			<div className="relative z-[2] w-full">
+				<h2 className="border-b border-b-white border-opacity-10 py-6 font-title text-4xl uppercase lg:text-[3.5vw] lg:leading-none">
 					creon pass nft
 				</h2>
-				<h3 className="font- bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text py-6 text-lg font-bold text-transparent ">
+				<h3 className="font- bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text py-6 font-bold text-transparent lg:text-lg ">
 					The Creon NFT pass unlocks access to AI projects, the Creon launchpad,
 					and a ticket to generate passive income through AI-driven tools
 				</h3>
@@ -23,7 +23,7 @@ const CreonPass = () => {
 					{itemsList.map((item, i) => (
 						<li
 							key={i}
-							className="w-fit rounded-md border border-white border-opacity-10 px-6 py-3 font-normal"
+							className="w-fit rounded-md border border-white border-opacity-10 px-6 py-3 text-sm font-normal lg:text-base"
 						>
 							{item}
 						</li>
@@ -35,17 +35,18 @@ const CreonPass = () => {
 					className="mt-14 w-3/4"
 				/>
 			</div>
-			<div
-				style={{ boxShadow: "inset -10px -10px 20px 40px black " }}
-				className="relative h-full w-full  shadow-inner  shadow-red-800 "
-			>
+			<div className="absolute inset-0 -z-[1] h-full w-full shadow-inner shadow-red-800 brightness-[20%] md:relative  md:inset-auto  md:z-0 md:brightness-100 ">
 				<div className="absolute inset-0 bg-gradient-to-t from-[rgba(61,139,255,0.44)] to-brand-purple mix-blend-soft-light " />
+				<div
+					className="absolute inset-0 h-full w-full "
+					style={{ boxShadow: "inset -10px -10px 20px 40px black " }}
+				/>
 				<video
 					muted
 					autoPlay
 					loop
 					src="/videos/nft-video.mp4"
-					className="absolute -z-[1] h-full w-full object-cover"
+					className="absolute -z-[2] h-full w-full object-cover"
 				/>
 			</div>
 		</Container>

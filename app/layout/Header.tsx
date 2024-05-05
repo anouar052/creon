@@ -16,7 +16,7 @@ const Header: FC = () => {
 	const [navOpen, setNavOpen] = useState(false);
 	return (
 		<header className="absolute left-0 top-0 z-30 flex h-[6.5rem] w-full items-center justify-between p-4 font-satoshi md:p-8">
-			<Logo className="scale-90" />
+			<Logo className="origin-left scale-75" />
 			<nav className="flex items-center md:gap-4 lg:gap-10">
 				<div
 					className={` ${

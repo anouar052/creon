@@ -3,13 +3,15 @@ import GradientOverlay from "./GradientOverlay";
 
 const Profiting = () => {
 	return (
-		<Container className=" flex h-screen w-full flex-col gap-6 py-20  ">
-			<h2 className="font-title text-6xl uppercase">Profiting Through</h2>
-			<h3 className="w-fit self-end bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text font-title text-3xl uppercase text-transparent">
+		<Container className=" flex  w-full flex-col gap-6 py-20 md:h-screen  ">
+			<h2 className="font-title text-4xl uppercase md:text-6xl">
+				Profiting Through
+			</h2>
+			<h3 className="w-fit self-end bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text font-title text-2xl uppercase text-transparent md:text-3xl">
 				AI Innovation & Decentralization
 			</h3>
-			<div className="mt-8 flex h-fit ">
-				<div className="relative mr-8 w-full flex-[2.5] ">
+			<div className="mt-8 flex h-fit flex-col md:flex-row ">
+				<div className="relative mr-8 h-full min-h-[20rem] w-full flex-[2.5] ">
 					<GradientOverlay />
 					<video
 						controls
@@ -17,7 +19,7 @@ const Profiting = () => {
 						className="absolute -z-[1] h-full w-full object-cover"
 					/>
 				</div>
-				<div className=" flex-1 space-y-4 border-x border-x-white border-opacity-10 px-6 py-[5.5rem] leading-[1.3]">
+				<div className=" flex-1 space-y-4 border-x border-x-white border-opacity-10 px-6 py-6 leading-[1.3] md:py-[5.5rem]">
 					<h4 className="text-lg font-bold leading-[1.3]">
 						The dynamic community driven business model of the future.
 					</h4>

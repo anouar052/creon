@@ -26,7 +26,7 @@ const AccordionComponent = ({ item, index }: Props) => {
 						<p className="text-left text-lg">{item.trigger}</p>
 					</div>
 				</AccordionTrigger>
-				<AccordionContent className="  pl-28">{item.body}</AccordionContent>
+				<AccordionContent className="pl-28">{item.body}</AccordionContent>
 			</AccordionItem>
 		</div>
 	);
