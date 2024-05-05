@@ -22,7 +22,9 @@ const AccordionComponent = ({ item, index }: Props) => {
 			>
 				<AccordionTrigger className="group">
 					<div className="group-has-[data-state=open]:scale-150 flex items-center gap-4">
-						<AccordionIcon>{item.icon}</AccordionIcon>
+						<AccordionIcon className="transition-all duration-500 group-data-[state=open]:[&>.ring-path]:fill-white group-data-[state=open]:[&>.shield]:fill-brand-gray ">
+							{item.icon}
+						</AccordionIcon>
 						<p className="text-left text-lg">{item.trigger}</p>
 					</div>
 				</AccordionTrigger>

@@ -16,7 +16,7 @@ const Mission = () => {
 					</span>
 				</h3>
 				<div
-					className="relative hidden flex-1 md:block md:w-3/4 lg:-mr-[20%]  lg:ml-[20%] lg:w-[120%]"
+					className="relative hidden max-h-[450px] min-h-[350px] flex-1 md:block md:w-3/4  lg:-mr-[20%] lg:ml-[20%] lg:w-[120%] "
 					style={{ boxShadow: "inset 0px 0px 20px 40px black " }}
 				>
 					<Image
