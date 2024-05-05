@@ -22,7 +22,7 @@ const Card = ({ card }: Props) => {
 				</p>
 			</div>
 			<div className="relative row-span-1 my-4 -ml-6 h-48 w-[calc(100%+24px)] overflow-hidden rounded-r-md">
-				<GradientOverlay blendMode="color" />
+				<GradientOverlay blendMode="overlay" />
 				<Image
 					src={image}
 					className="h-full w-full scale-105  object-cover object-center transition-transform duration-500 group-hover:scale-125"
