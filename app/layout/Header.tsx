@@ -37,7 +37,11 @@ const Header: FC = () => {
 						variant="secondary"
 					/>
 					{navItems.map((item, index) => (
-						<CustomNavLink item={item} key={index} />
+						<CustomNavLink
+							onClick={() => setNavOpen(false)}
+							item={item}
+							key={index}
+						/>
 					))}
 					<Socials className="lg:hidden" />
 				</div>

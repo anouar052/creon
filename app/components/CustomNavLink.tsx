@@ -1,18 +1,19 @@
 import Link from "next/link";
 
-type Props = {
+type Props = React.ComponentPropsWithoutRef<"a"> & {
 	item: {
 		title: string;
 		badge: boolean;
 		link: string;
 	};
 };
-const CustomNavLink = ({ item }: Props) => {
+const CustomNavLink = ({ item, ...props }: Props) => {
 	const { link, badge, title } = item;
 	return (
 		<Link
 			href={link}
 			className="relative whitespace-nowrap border-t border-t-white border-opacity-10 py-4 font-bold transition-colors last:border-b last:border-white last:border-opacity-10 hover:text-brand-blue lg:border-none lg:text-sm   "
+			{...props}
 		>
 			{title}
 			{badge && (
